@@ -6,7 +6,7 @@ var http = require("http"),
 http
   .createServer(async function (request, response) {
     let file_path = request.url;
-    console.log(file_path);
+    
     // covid data
     if (file_path === "/covid-data") {
       const { data } = await axios.get(

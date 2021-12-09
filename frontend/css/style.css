@@ -90,21 +90,19 @@ body {
 .column1 {
   float: left;
   width: 65%;
-  padding: 50px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  padding: 25px;
 }
 
 .column2 {
   float: left;
   width: 25%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }
 /* Clear floats after the columns */
-.row::after {
+.row {
   content: "";
-  display: table;
-  clear: both;
+  display: flex;
+  flex-direction: row;
 }
 
 .Protestors-face-off {
@@ -225,4 +223,34 @@ body {
 .column-box div p {
   font-size: 36px;
   margin: 0;
+}
+
+.footer {
+  height: 50px;
+  background-color: #003366;
+}
+
+.footer a.logo {
+  float: left;
+  padding: 3px 10px !important;
+  height: 45px;
+}
+
+.terms {
+  font-family: Arial, Helvetica, sans-serif;
+  float: right;
+  color: #afbcc8;
+  padding-right: 10px;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.terms .term-bold {
+  color: white;
+}
+
+.logo img {
+  height: 45px;
+  width: 170px;
+  object-fit: contain;
 }

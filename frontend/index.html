@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="topnav" id="myTopnav">
-      <a href="#" class="logo"><img src="img/logo.svg" /></a>
+      <a href="#" class="logo"><img src="img/logo.png" /></a>
       <div style="float: right">
         <a href="#home" class="active">Home</a>
         <a href="#news">News</a>
@@ -53,21 +53,21 @@
             <img src="img/tc_status.png" />
             <div>
               <h4>Total Cases</h4>
-              <p id="total-case">456,567</p>
+              <p id="total_cases">-</p>
             </div>
           </div>
           <div class="column-box">
             <img src="img/rc_status.png" />
             <div>
               <h4>Recovered Cases</h4>
-              <p id="recovered-case">25,667</p>
+              <p id="recovered_cases">-</p>
             </div>
           </div>
           <div class="column-box">
             <img src="img/tc_status.png" />
             <div>
               <h4>Deaths</h4>
-              <p id="deaths">3,247</p>
+              <p id="deaths_cases">-</p>
             </div>
           </div>
         </div>
@@ -143,11 +143,21 @@
         </div>
       </div>
       <div class="column2">
-        <h2>Column 2</h2>
-        <p>Some text..</p>
+        <div class="dont-miss-heading">
+          <h2>Dont miss</h2>
+        </div>
       </div>
     </div>
-    
-    <script src="./js/index.js" />
+
+    <footer class="footer">
+      <a href="#" class="logo"><img src="img/logo.png" /></a>
+      <p class="terms">
+        Privacy Policy | Terms of Service |
+        <span class="term-bold"><u>Contact Us</u></span> | Uninstall |
+        Unsubscribe
+      </p>
+    </footer>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
